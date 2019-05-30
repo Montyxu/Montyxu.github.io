@@ -93,40 +93,66 @@
 			</ul>
 		</div>
 		<div class="keyan">
-			<h3>科研经历</h3>
+			<h3>项目经历</h3>
 			<hr>
 			<div class="title">
 				<div class="left">
-					<span class="color-black">2018.01-2019.05</span>
+					<span class="color-black">2019.02-2019.02</span>
 				</div>
 				<div class="right">
 					<span class="color-black">主要研究人员</span>
 				</div>
 				<div class="mid">
-					<span class="color-black">关于LDPC码是否适合盲帧同步的研究</span>
+					<span class="color-black">仿美团网web前端开发</span>
 				</div>
 			</div>
-			<p class="color-888" style="text-indent: 2em; ">
-				经过仿真发现，当采用802.11n中的QC-LDPC（准循环LDPC）码进行盲帧同步时，其FER（误帧率）性能远远不如采用随机LDPC码进行盲帧同步的FER性能，由此引发了我们对QC-LDPC码是否适合盲帧同步的思考。
-			</p class="color-888">
-			
 			<ul>
 				<li>
-					<p class="color-888">
-						提出了一种统一的度量方法：只要给定某个LDPC码（LDPC的校验矩阵给定）,便可以根据该度量方法确定给定码是否适合盲帧同步；
+					<p class="color-888" style="line-height:25px;">
+					<b>项目描述：</b>用HTML/CSS/JavaScript完成美团网多个页面（主页/列表页/详情页）的开发，实现了下拉菜单、图文混排、选项卡切换等功能，以及实现了倒计时、图片轮播、吸顶等效果。对于不同页面的公共部分（例如页面的头部和底部），将其单独写成一个文件，以便于代码的复用。
 					</p>
 				</li>
 				<li>
-					<p class="color-888">
-						对于一般情况，提出判断QC-LDPC这类码是否适合盲帧同步的衡量方法，利用QC-LDPC独特的结构性质，推导出这类码是否适合盲帧同步的影响因素并给出相关结论。
+					<p class="color-888" style="line-height:25px;">
+						<b>项目难点：</b>多组图片无缝隙滚动（轮播）
 					</p>
 				</li>
 				<li>
-					<p class="color-888">主要负责前期调研、方法设计、仿真验证（Matlab）及论文的撰写等工作
+					<p class="color-888" style="line-height:25px;">
+						<b>解决方案：</b>考虑向左滚动的情况，将第一组图片复制放到最后一组图片后面，通过js不断的判断当前是否到达最后一屏（第一组图片），到达后立刻将left置为0，重新拉到第一屏，即可实现无缝轮播。
 					</p>
 				</li>
 			</ul>
-				
+			
+
+			<div class="title">
+				<div class="left">
+					<span class="color-black">2019.04-2019.04</span>
+				</div>
+				<div class="right">
+					<span class="color-black">主要研究人员</span>
+				</div>
+				<div class="mid">
+					<span class="color-black">网页版许愿墙</span>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<p class="color-888" style="line-height:25px;">
+					<b>项目描述：</b>用HTML/CSS/jQuery等技术实现了网页版许愿墙的效果，网页背景随机显示，用户可以在输入框写下心愿，按下enter键后会自动生成一张许愿纸条贴在网页上，纸条的位置和颜色随机产生，用户可以任意拖拽纸条，可以通过点击“关闭”删除纸条（事件委托）。
+					</p>
+				</li>
+				<li>
+					<p class="color-888" style="line-height:25px;">
+						<b>项目难点：</b>实现纸条的拖拽
+					</p>
+				</li>
+				<li>
+					<p class="color-888" style="line-height:25px;">
+						<b>解决方案：</b>绑定mousedown和mousemove事件，分别记录下鼠标按下时的鼠标指针位置和移动后鼠标指针的位置，计算出移动后纸条的左边距(left)和上边距(top)，根据left和top的值确定纸条的位置，并且判断纸条是否超过边界位置。
+					</p>
+				</li>
+			</ul>
 		</div>
 		<div class="job">
 			<h3>校园经历</h3>
